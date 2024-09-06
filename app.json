@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": ["CAMERA", "RECORD_AUDIO"]
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,14 @@
         "expo-router",
         {
           "origin": "https://uber.com/"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Ryde to access your camera",
+          "microphonePermission": "Allow Ryde to access your microphone",
+          "recordAudioAndroid": true
         }
       ]
     ],
